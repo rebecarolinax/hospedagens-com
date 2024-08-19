@@ -1,149 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Review</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <title>Hospedagens.com</title>
+    <link rel="stylesheet" href="resources/css/style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div id="logo-box">
-                <img class="logo" src="./assets/assets/logo-branca.png">
-                <div class="nav-box">
-                <a class="nav-links">Home</a>
-                <a class="nav-links">Contato</a>
-                <a class="nav-links">Entrar</a>
 
-                <button id="button-register">
-                    <p class="button-text">Cadastrar-se</p>
-                </button> 
-                </div> 
+<body>
+
+    <header class="banner wrapper">
+
+        <nav class="navigation flex-center-center">
+
+            <img src="./resources/images/logo-branca.png" alt="" class="logo">
+
+            <div class="links flex-center-center">
+
+                <a class="text text__dark" href="/Hoteis">Hotéis</a>
+                <a class="text text__dark" href="/Contato">Contato</a>
+                <a class="text text__dark" href="/Entrar">Entrar</a>
+
+                <button type="submit" class="btn flex-center-center btn__dark">Cadastrar-se</button>
+
             </div>
         </nav>
+        <div class="banner-content">
+            <span>
+                <h1 class="text__dark">
+                    As melhores hospedagens do Brasil
+                </h1>
+                <p class="text text__dark paragraph">
+                    mais de 500 mil reservas esperando por você! Basta procurar pelo local ideal, e realizar a
+                    viagem dos seus sonhos
+                </p>
+            </span>
+            <img src="./resources/images/mapa-brasil.png" alt="" class="banner-img">
+        </div>
+
+
     </header>
-
     <main>
-        <section class="section-main">
-        <div class="section-box">
-            <h1 class="section-title">As melhores hospedagens do Brasil!</h1>
-            <h2 class="section-text">mais de 500mil reservas esperando por você! Basta <br/> procurar pelo lugar ideal, e realizar a viagem dos seus <br/> sonhos!</h2>
+        <div class="wrapper">
+
+
+            <nav class="filters">
+                <div class="filters-container">
+
+
+                    <div>
+                        <img src="./resources/icons/local-icon.svg" alt="">
+                        <a>Qual o local desejado?</a>
+                    </div>
+                    <div>
+                        <img src="./resources/icons/checkin-icon.svg" alt="">
+                        <a>Data check in</a>
+                    </div>
+                    <div>
+                        <img src="./resources/icons/checkout-icon.svg" alt="">
+                        <a>Data check out</a>
+                    </div>
+
+                    <button class="btn flex-center-center">Procurar Hotel</button>
+                </div>
+            </nav>
+            <section class="hotel">
+                <article class="hotel-card">
+                    <figure class="hotel-content">
+                        <img src="./resources/images/aerea-da-piscina-com.jpg" alt="" class="hotel-picture">
+                        <figcaption class="hotel-details">
+                            <span class="hotel-title">
+                                <h3>Gustavo Lindo</h3>
+                                <h3 class="text__yellow">RJ</h3>
+                            </span>
+                            <label for="" class="hotel-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ac dictum lacus. Nullam dignissim orci.</label>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="hotel-card">
+                    <figure class="hotel-content">
+                        <img src="./resources/images/Botanique-Hotel-Spa-2.webp" alt="" class="hotel-picture">
+                        <figcaption class="hotel-details">
+                            <span class="hotel-title">
+                                <h3>Hotel Name</h3>
+                                <h3 class="text__yellow">RJ</h3>
+                            </span>
+                            <label for="" class="hotel-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ac dictum lacus. Nullam dignissim orci.</label>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="hotel-card">
+                    <figure class="hotel-content">
+                        <img src="./resources/images/mexico-playa-del-carmen-top-resorts-rosewood-mayakoba.jpg" alt=""
+                            class="hotel-picture">
+                        <figcaption class="hotel-details">
+                            <span class="hotel-title">
+                                <h3>Hotel Name</h3>
+                                <h3 class="text__yellow">RJ</h3>
+                            </span>
+                            <label for="" class="hotel-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ac dictum lacus. Nullam dignissim orci.</label>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="hotel-card">
+                    <figure class="hotel-content">
+                        <img src="./resources/images/pacotes-zarpo-rn-capa-natal-pipa.jpg" alt="" class="hotel-picture">
+                        <figcaption class="hotel-details">
+                            <span class="hotel-title">
+                                <h3>Hotel Name</h3>
+                                <h3 class="text__yellow">RJ</h3>
+                            </span>
+                            <label for="" class="hotel-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ac dictum lacus. Nullam dignissim orci.</label>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="hotel-card">
+                    <figure class="hotel-content">
+                        <img src="./resources/images/aerea-da-piscina-com.jpg" alt="" class="hotel-picture">
+                        <figcaption class="hotel-details">
+                            <span class="hotel-title">
+                                <h3>Hotel Name</h3>
+                                <h3 class="text__yellow">RJ</h3>
+                            </span>
+                            <label for="" class="hotel-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ac dictum lacus. Nullam dignissim orci.</label>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="hotel-card">
+                    <figure class="hotel-content">
+                        <img src="./resources/images/Botanique-Hotel-Spa-2.webp" alt="" class="hotel-picture">
+                        <figcaption class="hotel-details">
+                            <span class="hotel-title">
+                                <h3>Hotel Name</h3>
+                                <h3 class="text__yellow">RJ</h3>
+                            </span>
+                            <label for="" class="hotel-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ac dictum lacus. Nullam dignissim orci.</label>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="hotel-card">
+                    <figure class="hotel-content">
+                        <img src="./resources/images/mexico-playa-del-carmen-top-resorts-rosewood-mayakoba.jpg" alt=""
+                            class="hotel-picture">
+                        <figcaption class="hotel-details">
+                            <span class="hotel-title">
+                                <h3>Hotel Name</h3>
+                                <h3 class="text__yellow">RJ</h3>
+                            </span>
+                            <label for="" class="hotel-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ac dictum lacus. Nullam dignissim orci.</label>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="hotel-card">
+                    <figure class="hotel-content">
+                        <img src="./resources/images/pacotes-zarpo-rn-capa-natal-pipa.jpg" alt="" class="hotel-picture">
+                        <figcaption class="hotel-details">
+                            <span class="hotel-title">
+                                <h3>Hotel Name</h3>
+                                <h3 class="text__yellow">RJ</h3>
+                            </span>
+                            <label for="" class="hotel-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                ac dictum lacus. Nullam dignissim orci.</label>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+
+
+
+            <section class="promotion banner-content">
+                <!-- <div class="promotion-content"> -->
+                <span>
+                    <h1 class="title">
+                        Venha conferir os melhores<span class="text__blue"> hoteis</span> com as melhores
+                        <span class="text__green"> promoções </span> do país
+                    </h1>
+                    <p class="text paragraph paragraph__bold">
+                        <span class="text__green">Não perca tempo </span>e venha conferir o que há de <span
+                            class="text__yellow">melhor</span> na hotelagem brasileira
+                    </p>
+                </span>
+                <img src="resources/images/travel.png" alt="" class="promotion-img">
+                <!-- </div> -->
+            </section>
+
+
         </div>
-            <img class="map-image" src="./assets/assets/mapa-brasil.png"/>
-        </section>
-
-        <div class="task-bar">
-            <img class="photo-pin" src="./assets/assets/icons/local-icon.png"/>
-            <a class="task-title">Qual o local desejado?</a>
-
-            <img class="calendar" src="./assets/assets/icons/checkin-icon.png"/>
-            <a class="task-title">Data check-in</a>
-
-            <img class="calendar" src="./assets/assets/icons/checkin-icon.png"/>
-            <a class="task-title">Data check-out</a>
-
-            <button class="find-hotel">
-                <p class="button-text">Procurar hotel</p>
-            </button>
-        </div>
-
-
-        <section class="section-hotel">
-            <div class="card">
-                <img class="travel" src="./assets/Mar-azul-e-ilhas-paradisíacas-veja-o-que-fazer-em-Angra-dos-Reis-770x515.jpg"/>
-             
-                    <h2 class="hotel-title">Angra dos Reis</h2>
-                    <h2 class="badge-state">rj</h2>
-                 
-                <h4 class="hotel-text">Desfrute de um paráiso tropical na nossa <br/> pousada! Relaxe em nossas piscinas com vista para o mar.</h4>
-            </div>
-
-            <div class="card">
-                <img class="travel" src="./assets/Mar-azul-e-ilhas-paradisíacas-veja-o-que-fazer-em-Angra-dos-Reis-770x515.jpg"/>
-             
-                    <h2 class="hotel-title">Angra dos Reis</h2>
-                    <h2 class="badge-state">rj</h2>
-                 
-                <h4 class="hotel-text">Desfrute de um paráiso tropical na nossa <br/> pousada! Relaxe em nossas piscinas com vista para o mar.</h4>
-            </div>
-
-            <div class="card">
-                <img class="travel" src="./assets/Mar-azul-e-ilhas-paradisíacas-veja-o-que-fazer-em-Angra-dos-Reis-770x515.jpg"/>
-             
-                    <h2 class="hotel-title">Angra dos Reis</h2>
-                    <h2 class="badge-state">rj</h2>
-                 
-                <h4 class="hotel-text">Desfrute de um paráiso tropical na nossa <br/> pousada! Relaxe em nossas piscinas com vista para o mar.</h4>
-            </div>
-
-            <div class="card">
-                <img class="travel" src="./assets/Mar-azul-e-ilhas-paradisíacas-veja-o-que-fazer-em-Angra-dos-Reis-770x515.jpg"/>
-             
-                    <h2 class="hotel-title">Angra dos Reis</h2>
-                    <h2 class="badge-state">rj</h2>
-                 
-                <h4 class="hotel-text">Desfrute de um paráiso tropical na nossa <br/> pousada! Relaxe em nossas piscinas com vista para o mar.</h4>
-            </div>
-
-            <div class="card2">
-                <img class="travel" src="./assets/Mar-azul-e-ilhas-paradisíacas-veja-o-que-fazer-em-Angra-dos-Reis-770x515.jpg"/>
-             
-                    <h2 class="hotel-title">Angra dos Reis</h2>
-                    <h2 class="badge-state">rj</h2>
-                 
-                <h4 class="hotel-text">Desfrute de um paráiso tropical na nossa <br/> pousada! Relaxe em nossas piscinas com vista para o mar.</h4>
-            </div>
-
-            <div class="card2">
-                <img class="travel" src="./assets/Mar-azul-e-ilhas-paradisíacas-veja-o-que-fazer-em-Angra-dos-Reis-770x515.jpg"/>
-             
-                    <h2 class="hotel-title">Angra dos Reis</h2>
-                    <h2 class="badge-state">rj</h2>
-                 
-                <h4 class="hotel-text">Desfrute de um paráiso tropical na nossa <br/> pousada! Relaxe em nossas piscinas com vista para o mar.</h4>
-            </div>
-
-            <div class="card2">
-                <img class="travel" src="./assets/Mar-azul-e-ilhas-paradisíacas-veja-o-que-fazer-em-Angra-dos-Reis-770x515.jpg"/>
-             
-                    <h2 class="hotel-title">Angra dos Reis</h2>
-                    <h2 class="badge-state">rj</h2>
-                 
-                <h4 class="hotel-text">Desfrute de um paráiso tropical na nossa <br/> pousada! Relaxe em nossas piscinas com vista para o mar.</h4>
-            </div>
-
-            <div class="card2">
-                <img class="travel" src="./assets/Mar-azul-e-ilhas-paradisíacas-veja-o-que-fazer-em-Angra-dos-Reis-770x515.jpg"/>
-             
-                    <h2 class="hotel-title">Angra dos Reis</h2>
-                    <h2 class="badge-state">rj</h2>
-                 
-                <h4 class="hotel-text">Desfrute de um paráiso tropical na nossa <br/> pousada! Relaxe em nossas piscinas com vista para o mar.</h4>
-            </div> 
-        </section>
-
-
-        <section class="ad-section">
-            <div class="ad-box">
-                <h1 class="ad-text">Venha conferir os melhores hotéis <br/> com as melhores promoções do país</h1>
-                <h2 class="ad-subtext">Não perca tempo e venha ver o que há de <br/> melhor na hotelagem brasileira!</h2>
-            </div>
-            <img class="img-travel" src="./assets/assets/travel.png"/>
-        </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-box">
-              <h1 class="footer-title"> Fale com um de nossos acessores</h1>
-              <p class="footer-text">hospedagens@contato.com</p>
-              <p class="footer-subtext">(11)0800-707-0707</p>
+    <footer>
+        <div class="wrapper footer-content">
+            <h2>
+                Fale com um de nossos acessores
+            </h2>
+            <span class="footer-content-contacts">
+                <p class="text">
+                    hospedagens@contato.com.br
+                </p>
+                <p class="text">
+                    (11) 0800-707-0707
+                </p>
+            </span>
         </div>
 
-        <div class="footer-yellow">
-            <h1 class="footer-yellow-text">Hospedagens.com</h1>
+        <div class="footer-end">
+            <img src="./resources/images/logo-preta.png" alt="" class="logo__dark">
         </div>
-      
     </footer>
 </body>
+
 </html>
